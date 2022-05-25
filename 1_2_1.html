@@ -1,0 +1,190 @@
+<body>
+    <head>
+        <title>1.2.1 - Systems Software</title>
+        <link href="style.css" rel="stylesheet" id=stylemode>
+    </head>
+    <div id="page">
+        <div id="list">
+            <h2 class="list-item"><a href="index.html" class="list-item">A-Level Computer Science Revision</a></h2>
+            <h3>Component 1</h3>
+            <p class="list-item"><a href="1_1_1.html" class="list-item">1.1.1 - Structure and Function of the Processor</a></p>
+            <p class="list-item"><a href="1_1_2.html" class="list-item">1.1.2 - Types of Processor</a></p>
+            <p class="list-item"><a href="1_1_3.html" class="list-item">1.1.3 - Input, Output and Storage</a></p>
+            <p class="list-item">1.2.1 - Systems Software</p>
+            <p class="list-item"><a href="1_2_2.html" class="list-item">1.2.2 - Applications Generation</a></p>
+            <p class="list-item"><a href="1_2_3.html" class="list-item">1.2.3 - Software Development</a></p>
+            <p class="list-item"><a href="1_2_4.html" class="list-item">1.2.4 - Types of Programming Language</a></p>
+            <p class="list-item"><a href="1_3_1.html" class="list-item">1.3.1 - Compression, Encryption & Hashing</a></p>
+            <p class="list-item"><a href="1_3_2.html" class="list-item">1.3.2 - Databases</a></p>
+            <p class="list-item"><a href="1_3_3.html" class="list-item">1.3.3 - Networks</a></p>
+            <p class="list-item"><a href="1_3_4.html" class="list-item">1.3.4 - Web Technologies</a></p>
+            <p class="list-item"><a href="1_4_1.html" class="list-item">1.4.1 - Data Types</a></p>
+            <p class="list-item"><a href="1_4_2.html" class="list-item">1.4.2 - Data Structures</a></p>
+            <p class="list-item"><a href="1_4_3.html" class="list-item">1.4.3 - Boolean Algebra</a></p>
+            <p class="list-item"><a href="1_5_1.html" class="list-item">1.5.1 - Computing Related Legislation</a></p>
+            <p class="list-item"><a href="1_5_2.html" class="list-item">1.5.2 - Computing Related Legislation</a></p>
+            <h3>Component 2</h3>
+            <p class="list-item"><a href="2_1_1.html" class="list-item">2.1.1 - Thinking Abstractly</a></p>
+            <p class="list-item"><a href="2_1_2.html" class="list-item">2.1.2 - Thinking Ahead</a></p>
+            <p class="list-item"><a href="2_1_3.html" class="list-item">2.1.3 - Thinking Procedurally</a></p>
+            <p class="list-item"><a href="2_1_4.html" class="list-item">2.1.4 - Thinking Logically</a></p>
+            <p class="list-item"><a href="2_1_5.html" class="list-item">2.1.5 - Thinking Concurrently</a></p>
+            <p class="list-item"><a href="2_2_1.html" class="list-item">2.2.1 - Programming Techniques</a></p>
+            <p class="list-item"><a href="2_2_2.html" class="list-item">2.2.2 - Computational Methods</a></p>
+            <p class="list-item"><a href="2_3_1.html" class="list-item">2.3.1 - Algorithms</a></p>
+            <h5 class="list-item"><a href="https://roseleigh.dev" class="watermark">made by roseleigh.dev</a></h5>
+        </div>
+        <div id="contents">
+            <h1>1.2.1 - Systems Software</h1>
+            <table class="spec">
+                <th colspan="2">Specification</th>
+                <tr>
+                    <td>1.2.1 - Systems Software</td>
+                    <td>
+                        <ol type="a">
+                            <li>The need for, function and purpose of operating systems.</li>
+                            <li>Memory Management (paging, segmentation, and virtual memory).</li>
+                            <li>Interrupts, the role of interrupts and Interrupt Service Routines (ISR), role within the Fetch-Decode-Execute cycle.</li>
+                            <li>Scheduling: round robin, first come first served, multi-level feedback queues, shortest job first, and shortest remaining time.</li>
+                            <li>Distributed, embeedded, multi-tasking, multi-user and Real Time operating systems.</li>
+                            <li>BIOS.</li>
+                            <li>Device drivers.</li>
+                            <li>Virtual machines, any instance where the software is used to take on the function of a machine, including executing intermediate code or running an operating system within another.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+            <h3>Operating system</h3>
+            <ul class="contents">
+                <li>The operating system is the core software the system runs on.</li>
+                <li>It handles resource management (e.g. hardware/peripherals), handles interrupts, and manages memory.</li>
+                <li>It provides a user interface, utilities for system maintenance, system security and a platform for software to be installed to or run on.</li>
+            </ul>
+            <h3>Memory management</h3>
+            <h4>Paging</h4>
+            <ul class="contents">
+                <li>Memory is divided into fixed size physical divisions - <strong>each page is a fixed size.</strong></li>
+                <li>This fixed size of pages makes it easier to allocate pages and workout their position, however space inside a page may be wasted as programs tend not to take up the exact number of pages. All pages can still be used with no wasted space however.</li>
+            </ul>
+            <h4>Segmentation</h4>
+            <ul class="contents">
+                <li>A program is deviced into variable sizes using logical divisions.</li>
+                <li>Segmentation means programs only need the exact space needed...</li>
+                <li>...but there may be wasted space between programs as they are loaded and removed from memory.</li>
+            </ul>
+            <h4>Paging vs Segmentation - what are the similarities?</h4>
+            <ul class="contents">
+                <li>Both are ways of partitioning and splitting up memory.</li>
+                <li>To swap parts of programs, virtual memory may be used <em>(see below)</em>. </li>
+                <li>Both allow programs larger than memory to run or when insufficient memory is available, and both allow the non-contiguous <em>(meaning not next to each other)</em> storing of programs.</li>
+            </ul>
+            <h4>Virtual memory</h4>
+            <ul class="contents">
+                <li>Virtual memory is where part of secondary storage is used as extra memory space when physical memory space is limited.</li>
+                <li>Memory contents are divided into pages.</li>
+                <li>Pages can&#39t be ran directly from virtual memory. This means that pages not needed get moved to virtual memory, and pages that are needed get moved from it into physical memory.</li>
+            </ul>
+            <h3>Interrupts and the Fetch-Decode-Execute Cycle.</h3>
+            <p style="background-color:aquamarine; color: black;"><strong>Interrupt:</strong> a signal sent to the processor meaning that a device/process needs attention.</p>
+            <h4>What actually happens when an interrupt is recieved?</h4>
+            <ul class="contents">
+                <li>If the interrupt is of a lower/equal priority to the current process, nothing will happen. The current process will continue as normal.</li>
+                <li>If it is a higher priority, the CPU will finish its Fetch-Decode-Execute cycle. The contents of the CPU's registeres are then copied to a stack in memory.</li>
+                <li>The location of the appropriate interrupt service routine is then loaded into the program counter. When it's complete, the previous instruction is popped from the stack and loaded back into the registers.</li>
+            </ul>
+            <h3>Scheduling</h3>
+            <h4>What is scheduling and why is it neccesary?</h4>
+            <ul class="contents">
+                <li>Scheduling is neccesary to ensure all jobs are processed and to stop a slow resource wasting the processor's time.</li>
+                <li>This prevents processes from failing to run due to deadlock and provides a reasonable response time.</li>
+                <li>This also allows as many jobs as possible to be processed in the least possible time and ensures all jobs are processed fairly.</li>
+            </ul>
+            <h4>Round Robin</h4>
+            <ul class="contents">
+                <li>Round robin scheduling is when processes are dealt with on a first-in-first-out basis. Each process is given a limited and fixed amount of time known as a <strong>time slice</strong>.</li>
+                <li>If the prcoess does not complete before the time slice expires, the despatcher gives the CPU to the next process and the job will move to the back of the queue.</li>
+            </ul>
+            <h4>First come first served (FCFS)</h4>
+            <ul class="contents">
+                <li>FCFS processing is where jobs are processed in the order they arrive, with no system of priorities. </li>
+                <li>FCFS processing can be compared to queuing in a shop. The first job to arrive will <strong>always</strong> be the first job to be processed. Other jobs are queued up waiting for their turn.</li>
+            </ul>
+            <h4>Multi-level feedback queues (MLFQ)</h4>
+            <ul class="contents">
+                <li>This is where a number of queues are used, as the name suggestes. Each queue has a different priority to each other.</li>
+                <li>The algorithm will move jobs between these queues depending on the job's behaviour.</li>
+            </ul>
+            <h4>Shortest job first (SJF)</h4>
+            <ul class="contents">
+                <li>This one if self-explanatory: the job that will take the algorithm thinks will take the shortest time is ran until it's finished.</li>
+                <li>This requires the algorithm to understand how long each job will take in advance.</li>
+            </ul>
+            <h4>Shortest remaining time (SRT) </h4>
+            <ul class="contents">
+                <li>The quickest job is completed first, but the processor will stop and re-evaluate when a new job arrives.</li>
+            </ul>
+            <h3>Types of operating systems</h3>
+            <h4>Distributed OS</h4>
+            <ul class="contents">
+                <li>A system that shares processing between the processors on a network.</li>
+                <li>The data between the different systems on the network is shared in order to reduce bottelenecks. This allows multiple computers to act as one and work on the same instruction, <strong>speeding up the time it takes to complete.</strong></li>
+            </ul>
+            <h4>Embedded OS</h4>
+            <ul class="contents">
+                <li>This is where a device is managed by its built in system software, which is stored in the devices ROM. This makes it unchangable.</li>
+                <li>The OS will be specific to the hardware and its purpose.</li>
+                <li>Embedded systems are found in various types of hardware - for example could include washing machines, ATMs, and even cell phones.</li>
+                <li>These OSes tend to have a minimal user interface, with the hardware commonly consisting of just a few buttons and/or a dial. A smaller screen may also be used.</li>
+            </ul>
+            <h4>Multi-tasking OS</h4>
+            <ul class="contents">
+                <li>Multi-tasking allows the user to run more than one program.</li>
+                <li>An example of this could be browsing the internet or writing a document with word processing software while playing music in the background.</li>
+            </ul>
+            <h4>Multi-User OS</h4>
+            <ul class="contents">
+                <li>This is where multiple users are able to use the same computer at the same time.</li>
+                <li>Each user is given a time slice of the processor, similar to round robin scheduling.</li>
+            </ul>
+            <h4>Real-time OS (RTOS)</h4>
+            <ul class="contents">
+                <li>Real-time operating systems are designed to give a guaranteed response time. It is meant to be used when the proceessor will make decisions and take action immediately.</li>
+                <li>A self-driving car is a good example where an RTOS should be used. This is because the car would need to be able to respond to instant changes such as other cars and pedestrians. RTOS would offer a guaranteed response time, ensuring the safety of both the passengers.</li>
+            </ul>
+            <h3>Basic Input Output System (BIOS)</h3>
+            <ul class="contents">
+                <li>The BIOS is a small program stored in Read Only Memory (ROM) that is used in the process of starting the computer and loading the OS.</li>
+                <li>When the computer is powered on, the loader in ROM will send the instructions to load the OS by copying it from storage to RAM.</li>
+                <li>The first job of the BIOS after you switch your computer on is to run the <strong>Power On Self-Test.</strong> This is where the BIOS will check the computer's hardware in order to ensure the computer can turn on properly.</li>
+                <li><strong>If the BIOS is deleted, the computer would become unusable.</strong> This is because the computer would not be able to start the OS up, nor would it be able to set up its initial configuration.</li>
+            </ul>
+            <h3>Device Drivers</h3>
+            <ul class="contents">
+                <li>Devices drivers are a program that controls a piece of hardware and provides an interface between the device and the operating system (read: hardware and software).</li>
+                <li>This enables the operating system to access hardware functions without needing to know the details of the hardware being used. This means it effectively acts as a translator.</li>
+                <li>When new hardware is attached to the computer, such as a printer or a GPU, the relevant device driver would need to be installed before it can work with the OS.</li>
+            </ul>
+            <h3>Virtual machines (VMs)</h3>
+            <div id="imageBox">
+                <img src="images/Windows11-VM-image.png" alt="A Windows 11 Virtual Machine." style="width:624px;height:519px;">
+                <h5>A Windows 11 Virtual machine running on a macOS host through Parallels Desktop.</h5>
+            </div>
+            <ul class="contents">
+                <li>A virtual machine is a virtualised instance of a computer, running in the form of software.</li>
+                <li>The virtual machine will share (usually a specific portion of) the resources of the physical machines OS.</li>
+            </ul>
+            <h4>What are virtual machines used for?</h4>
+            <ul class="contents">
+                <li>Developers can make software for a variety of different platforms. VMs can be used to simulate the intended platform, allowing the devlopers to ensure their code works on it.</li>
+                <li>Virtual machines can also be used to test anti-virus software against viruses. The virus can be installed on the VM, and the update can be tested to see if it can catch them. The physical machine is protected from the virus and can quickly be reset to its original state.</li>
+            </ul>
+            <h4>Intermediate code</h4>
+            <ul class="contents">
+                <li>This is simplified code used on a VM between high level and machine code.</li>
+                <li>It's produced by a complier to be ran on any computer, allowing portability between machines.</li>
+                <li>Sections of code can be written in differnet languages in different programmers.</li>
+                <li>Only one version needs to be written, and this can be used on any device/OS combination supporting the Java Virtual Machine rather than multiple versions having to be made.</li>
+            </ul>
+        </div>
+    </div>
+</body>
