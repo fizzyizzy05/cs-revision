@@ -39,6 +39,8 @@ body {
     background-color:rgb(23, 23, 23);
     color: rgb(242, 242, 242);
     font-family: monospace;
+    padding: 20px;
+    margin-bottom: 0;
 }
 
 #page {
