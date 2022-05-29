@@ -35,6 +35,12 @@ body {
     font-size: 15px;
 }
 
+#codeBox {
+    background-color:rgb(23, 23, 23);
+    color: rgb(242, 242, 242);
+    font-family: monospace;
+}
+
 #page {
     display: flex;
     align-items: stretch;
