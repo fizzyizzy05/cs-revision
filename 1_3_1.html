@@ -68,9 +68,20 @@
                 <li>Lossy compression is not used on text files as the removal of small ammounts of data will make the file unreadable.</li>
             </ul>
             <p>Lossy compression may be used in the following situations:</p>
-            <ul class="list">
+            <ul class="contents">
                 <li><strong>Sound compression: </strong>MP3 can acheive powerful compression by stripping out the sounds which ears can't hear, as well as to use complex mathematical algorithms to futher reduce file sizes. This results in music files that are ~11x smaller than uncompressed music tracks.</li>
                 <li><strong>Image compression: </strong>JPG files are the most common file format for sharing and storing digital images, especially on the web. It&#39;s ideal for images that use &#62;256 colours, such as digital photos. When images are saved in JPG format, some data is lossed because the file is compressed. JPG files can be stored at various different quality settings, measured as a percentage of the original quality.</li>
+            </ul>
+            <h4>Lossless compression</h4>
+            <ul class="contents">
+                <li>Lossless compression preserves all of the information from the original file.</li>
+                <li>It's commonly used on files where losing data is not a viable option, such as code and text files.</li>
+            </ul>
+            <p>There are two main methods of lossless compression:</p>
+            <ul class="contents">
+                <li><strong>Run-Length Encoding (RLE): </strong>this relies on consecutive sets of characters being the same. Each consecutive symbol and it's number of occurences could be represented by the symbol and its number of consecutive occurence. For example, AAABBBBBBBCC would be represented as A3B7C2. The compression ratio can be found by dividing the size of the compressed file by the size of the original.</li>
+                <li><strong>Dictionary Encoding: </strong>this is where commonly occuring pieces of data/groups of characters are replaced by tokens. A dictionary is used to determine which tokens match which groups of characters. When the file is decompressed, the dictionarry is used to replace the tokens with the original text. As a consequence, the dictionary needs to be transmitted with the file.</li>
+                <li>The two may also be combined in order to increase the compression ratio.</li>
             </ul>
         </div>
     </div>
