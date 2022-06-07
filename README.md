@@ -13,6 +13,7 @@ I've made a website with revision notes for A-Level Computer Science. Note that 
 
 ### What's work in progress.
 - 1.2.3 (pseudocode examples missing, otherwise it's complete)
+- 1.3.1 
 
 ### What isn't in the works yet, but will be done soon.
 - Unit 1 components past 1.2.3
