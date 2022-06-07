@@ -112,30 +112,38 @@
             </ul>
             <div id="codeBox">
                 public procedure addStrength(str)
-                <br><br>
                 ...
-                <br><br>
+                <br>
                 end procedure
                 <br><br>
                 public procedure TakeStrength(str)
-                <br><br>
+                <br>
                 ...
-                <br><br>
+                <br>
                 end procedure
                 <br><br>
                 public procedure GetStrength(name)
-                <br><br>
+                <br>
                 ...
-                <br><br>
+                <br>
                 end procedure
                 <br><br>
                 public procedure setName(newName)
-                <br><br>
+                <br>
                 ...
-                <br><br>
+                <br>
                 end procedure
-                <br><br>
             </div>
+            <h3>Modes of addressing memory</h3>
+            <ul class="contents">
+                <li><strong>Operand: </strong>a 16 bit word. Usually represented by mnemonics such as SUB, LDA, HLT. Either an adress or a value.</li>
+            </ul>
+            <ul class="contents">
+                <li><strong>Immediate: </strong>this is where the operand is the actual value that is to be operated on. RAM is not used here.</li>
+                <li><strong>Direct: </strong>this is where the operand is the memory location.</li>
+                <li><strong>Indirect: </strong>this is where the operand is the location holding the addresses of data we want, alllowing a larger range of addressable locations.</li>
+                <li><strong>Indexed: </strong>this is where the operand is the starting location, with the value of the index register added on and incremented each time. This mode is used to access the elements of an array with successive memory locations.</li>
+            </ul>
         </div>
     </div>
 </body>
