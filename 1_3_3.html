@@ -59,6 +59,49 @@
                     </td>
                 </tr>
             </table>
+            <h3>Protocols</h3>
+            <p>Protocols are a set of rules for how devices communicate between each other. They may be implemented via software, hardware or both. Examples of protocols include:</p>
+            <ul class="contents">
+                <li><strong>HTTP: </strong>used for sending data over the internet.</li>
+                <li><strong>DCHP: </strong>used for assigning IP addresses to devices</li>
+                <li><strong>UDP: </strong>one of the core communication protocols of IP and used to send messages to hosts.</li>
+            </ul>
+            <p>Protocols are neccessary to allow networks to communicate by ensuring all devices communicate in the same way.</p>
+            <h3>TCP/IP Stack</h3>
+            <p>The TCP/IP Stack is responsible for sending packets of data between hosts. It passes them down the stack, and adds neccesary data during the process.</p>
+            <p>The stack is made up of four layers, memorisable via the acronym <strong>ATIL</strong>:</p>
+            <ul class="contents">
+                <li><strong>Application: </strong>chooses the right protocol to send the data with based on the software or the data type.</li>
+                <li><strong>Transport: </strong>uses <em>TCP</em> to split the data into packets and adds the packet number, total number of packets, and the port.</li>
+                <li><strong>Internet: </strong>Alternatively known as the Network layer. Adds the IP addresses of the sender and the recipient, and packages data for transmission. Routers operate on this layer.</li>
+                <li><strong>Link: </strong>adds in the MAC address and looks for the NIC to make sure the packets are in the right place.</li>
+            </ul>
+            <h3>Domain Name System</h3>
+            <p>DNS is used to route a domain to an IP address. For example, if you typed in google.com into your browser's address bar, the browser will send the request for google.co.uk to a DNS server. The server will attempt to map google.co.uk to the right IP address, and if it finds a match, it will return it to the web browser. If it doesn't have the IP address, it will instead forward on the request to another DNS server which may have the IP address for this site. When a DNS server is found that has the IP address, the match of the site and IP are passed down to the other DNS servers.</p>
+            <h3>Networks</h3>
+            <p>Networks are two or more computers connected to a network. They are used for communication as well as the sharing of files, data and resources. They are also often used for backups, distributed computing and centralised administration.</p>
+            <h4>Networking equipment:</h4>
+            <ul class="contents">
+                <li><strong>Router: </strong>a hardware device that connects a network to the internet.</li>
+                <li><strong>Modem: </strong>used to convert signals from an ISP such as Sky or BT and conversts them into signals local devices can use:</li>
+                <li><strong>Switch: </strong>sends data to devices on a network. Uses a broadcast-style transmission where packets are sent to all devices.</li>
+                <li><strong>Hub: </strong>similar functionality to a switch, but sends packets to the specific devices they are meant for.</li>
+                <li><strong>Wireless Access Point: </strong>used to broadcast a network connection wirelessly.</li>
+                <li><strong>Network Interface Card: </strong>used to connect devices to the network. Wireless Network Interface Cards can do this wirelessly when connected to a Wireless Access Point.</li>
+            </ul>
+            <h3>Circuit Switching</h3>
+            <p>Circuit switching is the setup of a pathway for data to be sent. It is a <em>direct link</em> bewtwen devices for communication of data. It is generally considered to be outdated and wastes bandwidth when data is not sent, but does not require the reassembly of packets as they are already in the right order.</p>
+            <h3>Packet Switching</h3>
+            <p>Packet switching is the process of breaking up packets in order to send them across a network more efficiently. At each node on the network, the destination address is read, and the best route is found. Packet switching does not waste network bandwidth as the line does not need to stay open for the entire communication time. It is also more secure as data is split across multiple different packets, meaning that many pieces of the data would be needed in order to obtain a readable message.</p>
+            <h3>Firewalls</h3>
+            <p>Firewalls are hardware or software devices used to secure networks. They scan incoming and outgoing data packets and block anything that is suspicious or unusual. They are used to prevent unauthorised access to data or data theft.</p>
+            <h3>Hackers</h3>
+            <p>A hacker is someone who uses computer code to gain access to a computer system. They are generally categorised in colours of hat:</p>
+            <ul class="contents">
+                <li><strong>Black hat: </strong>anyone who hacks into a system for malicious purposes including unauthorised access, the spread of malware, or data theft.</li>
+                <li><strong>White hat: </strong>anyone who hacks into a system in order to test its permission <em>with</em> prior permission.</li>
+                <li><strong>Grey hat: </strong>anyone who hacks into a system for a morally solid reason such as penetration testing, but does not have the prior permission from the network operator to do so. As such, grey hat hacProsecution of grey hat hackers is at the operator's discretion.</li>
+            </ul>
         </div>
     </div>
 </body>
