@@ -73,7 +73,7 @@ p.list-item {
     font-weight: bold;
 }
 
-p.home-list {
+p.home-list, a.home-list {
     color: black;
 }
 
