@@ -73,8 +73,13 @@ p.list-item {
     font-weight: bold;
 }
 
+p.home-list {
+    color: black;
+}
+
 a.list-item {
     color:rgb(255, 231, 231);
+    font-weight: normal;
 }
 
 ul.contents {
