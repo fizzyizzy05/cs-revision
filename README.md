@@ -1,6 +1,6 @@
 # A-Level Computer Science Revision Website.
 
-I've made a website with revision notes for A-Level Computer Science. Note that this is still WIP, but is being updated and worked on regularly. The live website can be found at roseleigh.dev/revision/cs. This repository will serve as a development ground while new pages and changes are made.
+I've made a website with my revision notes for A-Level Computer Science. Note that this is still WIP, but is being updated and worked on regularly. The live website can be found at roseleigh.dev/revision/cs. This repository will serve as a development ground while new pages and changes are made.
 
 ## Progress
 ### What's complete
